@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/form.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form>
+        <form autocomplete="off">
+            <img src="/checkpoint2/campinas.png" alt="Prefeitura" />
+
+            <h1>Cadastro Municipal</h1>
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div>
+                    <label for="fullNome">Nome Completo</label>
+                    <input required type="text" maxlength="100" nome = "fullNome" id="fullNome">
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <input required type="email" nome = "email" id="email">
+                </div>
+                <div>
+                    <label for="tel">Telefone</label>
+                    <input requerid type="tel" nome = "tel" id="tel">
+                </div>
+
+                <div>
+                    <label for="birthDate">Data de nascimento</label>
+                    <input requerid type="date" nome = "birthDate" id="birthDate">
+                </div>
+                    
+                
+                    <input type="radio" name = "opção" value = "Maior de Idade?"> Maior de Idade?
+                    <input type="radio" name = "opção" value = "Menor de Idade?"> Menor de Idade?
+                 
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Pontos de Interesses</legend>
+
+                <div>
+
+                    <label for="atração">Atração</label>
+                    <select nome="atração" id="atração">
+                        <option value="">Selecione um Lugar</option>
+                        <option value="1">Capela Swiss Park</option>
+                        <option value="2">Largos do Pará</option>
+                        <option value="3">Praça Arautos da Paz</option>
+                        <option value="4">Praça Carlos Gomes</option>
+                       
+                   
+                    </select>
+
+                </div>
+
+                <div>
+
+                    <label for="interesse">Motivo da sua visita</label>
+                    <input list="interesses" nome="interesse " id="intersse">
+                    <datalist id="interesses">
+                        <option value="Turista">
+                        <option value="Residente">
+                        <option value="Estudiante">
+
+                    </datalist>
+
+                </div>
+
+            </fieldset>
+
+            <div>
+                <button type="reset">Limpar o Formulario</button>
+
+                <button type="submit">Enviar</button>
+            </div>
+
+        </form>
+</body>
+
+</html>
